@@ -1,0 +1,31 @@
+### Lista de Tarefas
+GET http://localhost:5231/api/tarefas
+
+### Cadastrar Tarefa
+POST http://localhost:5231/api/tarefas
+Content-Type: application/json
+
+{
+    "statusId": 1,
+    "titulo": "Fazer caminhada",
+    "datavencimento": "2025-06-05"
+}
+
+### Lista por Id
+GET http://localhost:5231/api/tarefas/1
+
+### Deletar por Id
+
+DELETE http://localhost:5231/api/tarefas/1
+
+
+### Alterar por ID
+
+PUT http://localhost:5231/api/tarefas/1
+Content-Type: application/json
+
+{
+    "statusId": 1,
+    "titulo": "Levar o lixo",
+    "datavencimento": "2025-06-07"
+}
